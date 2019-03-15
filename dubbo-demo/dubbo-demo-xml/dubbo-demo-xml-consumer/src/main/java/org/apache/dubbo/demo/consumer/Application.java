@@ -29,7 +29,9 @@ public class Application {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("spring/dubbo-consumer.xml");
         context.start();
         DemoService demoService = context.getBean("demoService", DemoService.class);
+        System.out.println("---------使用zookeeper注册中心开始-------");
         String hello = demoService.sayHello("world");
         System.out.println("result: " + hello);
+        System.out.println("---------使用zookeeper注册中心结束-------");
     }
 }
