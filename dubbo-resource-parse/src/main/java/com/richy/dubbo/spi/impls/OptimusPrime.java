@@ -1,7 +1,7 @@
-package com.richy.dubbo.impl;
+package com.richy.dubbo.spi.impls;
 
 
-import com.richy.dubbo.interfaces.Roboty;
+import com.richy.dubbo.spi.interfaces.Roboty;
 
 public class OptimusPrime implements Roboty {
     @Override
